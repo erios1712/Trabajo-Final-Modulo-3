@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <div class="container" id="titulo">    
+        <h2>Presupuesto APP</h2>
+    </div>
+    <div class="container">
+        <div class="flex-container">
+            <div class="input-group m-3">
+                <label for="inputPres" class="form-label">Ingrese su presupuesto:</label>
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" id="inputPres" aria-label="Amount (to the nearest dollar)">    
+                <button type="button" class="btn btn-success" id="btnPres">Calcular</button>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="input-group m-3">
+                <label for="inputDescrip" class="form-label">Ingrese el nombre del gasto:</label>
+                <input type="text" class="form-control" id="inputDescrip">
+                <label for="inputGasto" class="form-label">Ingrese el monto del gasto:</label>
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" id="inputGasto">
+                <button type="button" id="btnGasto" class="btn btn-danger">Añadir Gasto</button>    
+            </div>
+        </div>
+        <div class="container" style="position: absolute; top: 220px;">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Presupuesto</th>
+                    <th scope="col">Gastos</th>
+                    <th scope="col">Saldo</th>
+                </tr>
+                </thead>
+                <tbody id="cuerpoTablaSaldo">
+                    
+                <!-- Esta parte se rellena desde script.js -->
+    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</header>
+<div class="container" style="position:absolute; top: 350px;">
+    <table class= "table">
+            <thead>
+            <tr>
+                <th scope="col">Gasto</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Accion</th>
+            </tr>
+            </thead>            
+    </table>    
+</div> 
+    <div class="container" id="tablaGastos" style="position:absolute; top: 390px; overflow:scroll; height:300px;">
+        <table class="table">
+                
+                <tbody id="cuerpoTablaGastos">
+                    
+
+                    <!-- Esta parte se rellena desde script.js -->
+
+               
+                </tbody>
+        </table>    
+    </div> 
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</html>
